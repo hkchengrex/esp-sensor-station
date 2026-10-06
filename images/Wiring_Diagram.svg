@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="990" viewBox="0 130 2000 990" role="img" aria-labelledby="title desc">
+<title id="title">ESP Sensor Station wiring diagram</title>
+<desc id="desc">XIAO ESP32-C5 connected to an SCD4x breakout, LD2410C radar and eight normally open switches. D4 GPIO23 is SDA; D5 GPIO24 is SCL; radar TX connects to D7 GPIO12. Each button connects its own GPIO to a shared switch return. One 1 kilohm resistor connects that shared return to board ground. Sensor grounds connect directly to board ground. XIAO pads follow the manufacturer top view with USB at the top: left D0 to D6; right 5V, GND, 3V3, D10, D9, D8, D7. Sensor blocks show electrical labels only.</desc>
+<defs><marker id="rx-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="#15816a" stroke-width="1.5"/></marker></defs>
+<rect width="2000" height="1120" fill="#ffffff"/>
+<text x="940" y="214" font-family="Segoe UI" font-size="19" font-weight="400" fill="#526675" text-anchor="middle">Top view</text>
+<rect x="740" y="280" width="400" height="480" rx="18" fill="#255550" stroke="#a7b6bf" stroke-width="1.5"/>
+<rect x="865" y="244" width="150" height="136" rx="13" fill="#e2e7eb" stroke="#a7b6bf" stroke-width="1.5"/>
+<rect x="878" y="253" width="124" height="25" rx="8" fill="#53616b" stroke="#a7b6bf" stroke-width="1.5"/>
+<text x="940" y="325" font-family="Segoe UI" font-size="24" font-weight="600" fill="#172c3b" text-anchor="middle">USB-C</text>
+<rect x="823" y="391" width="234" height="272" rx="9" fill="#e6e9e8" stroke="#a7b6bf" stroke-width="1.5"/>
+<text x="940" y="519" font-family="Segoe UI" font-size="35" font-weight="600" fill="#172c3b" text-anchor="middle">XIAO</text>
+<text x="940" y="555" font-family="Segoe UI" font-size="25" font-weight="400" fill="#172c3b" text-anchor="middle">ESP32-C5</text>
+<rect x="818" y="696" width="58" height="39" rx="4" fill="#b6c1c3" stroke="#a7b6bf" stroke-width="1.5"/>
+<rect x="1004" y="696" width="58" height="39" rx="4" fill="#b6c1c3" stroke="#a7b6bf" stroke-width="1.5"/>
+<circle cx="847" cy="715" r="10" fill="#596b72" stroke="#596b72" stroke-width="2"/>
+<circle cx="1033" cy="715" r="10" fill="#596b72" stroke="#596b72" stroke-width="2"/>
+<circle cx="940" cy="715" r="16" fill="#ebd8a3" stroke="#c4a15c" stroke-width="2"/>
+<circle cx="940" cy="715" r="6" fill="#ffffff" stroke="#8e793f" stroke-width="2"/>
+<text x="847" y="751" font-family="Segoe UI" font-size="13" font-weight="400" fill="#ffffff" text-anchor="middle">RESET</text>
+<text x="1033" y="751" font-family="Segoe UI" font-size="13" font-weight="400" fill="#ffffff" text-anchor="middle">BOOT</text>
+<text x="940" y="751" font-family="Segoe UI" font-size="13" font-weight="400" fill="#ffffff" text-anchor="middle">u.FL</text>
+<rect x="1570" y="170" width="340" height="300" rx="12" fill="#f7f9fb" stroke="#a7b6bf" stroke-width="1.5"/>
+<text x="1590" y="211" font-family="Segoe UI" font-size="25" font-weight="600" fill="#172c3b" text-anchor="start">SCD4x</text>
+<text x="1590" y="266" font-family="Consolas" font-size="20" font-weight="400" fill="#172c3b" text-anchor="start">VCC / VIN</text>
+<text x="1590" y="326" font-family="Consolas" font-size="20" font-weight="400" fill="#172c3b" text-anchor="start">SDA</text>
+<text x="1590" y="386" font-family="Consolas" font-size="20" font-weight="400" fill="#172c3b" text-anchor="start">SCL</text>
+<text x="1890" y="436" font-family="Consolas" font-size="20" font-weight="400" fill="#172c3b" text-anchor="end">GND</text>
+<rect x="1570" y="690" width="340" height="260" rx="12" fill="#f7f9fb" stroke="#a7b6bf" stroke-width="1.5"/>
+<text x="1590" y="731" font-family="Segoe UI" font-size="25" font-weight="600" fill="#172c3b" text-anchor="start">LD2410C</text>
+<text x="1590" y="796" font-family="Consolas" font-size="20" font-weight="400" fill="#172c3b" text-anchor="start">VCC</text>
+<text x="1590" y="856" font-family="Consolas" font-size="20" font-weight="400" fill="#172c3b" text-anchor="start">TX</text>
+<text x="1890" y="906" font-family="Consolas" font-size="20" font-weight="400" fill="#172c3b" text-anchor="end">GND</text>
+<text x="1590" y="934" font-family="Segoe UI" font-size="18" font-weight="400" fill="#526675" text-anchor="start">RX / OUT: NC</text>
+<path d="M1140 400 L1460 400 L1460 980 L1950 980 L1950 430" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1140 400 L1460 400 L1460 980 L1950 980 L1950 430" fill="none" stroke="#53616b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1910 430 L1950 430" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1910 430 L1950 430" fill="none" stroke="#53616b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1910 900 L1950 900" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1910 900 L1950 900" fill="none" stroke="#53616b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1000 980 L1460 980" fill="none" stroke="#53616b" stroke-width="3" stroke-linecap="round" />
+<circle cx="1460" cy="980" r="5" fill="#53616b" stroke="#53616b" stroke-width="2"/>
+<circle cx="1950" cy="900" r="5" fill="#53616b" stroke="#53616b" stroke-width="2"/>
+<circle cx="1950" cy="430" r="5" fill="#53616b" stroke="#53616b" stroke-width="2"/>
+<path d="M120 340 L120 1080 L1410 1080 L1410 520" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M120 340 L120 1080 L1410 1080 L1410 520" fill="none" stroke="#53616b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1000 980 L1000 1020" fill="none" stroke="#53616b" stroke-width="3" stroke-linecap="round" />
+<rect x="991" y="1020" width="18" height="40" fill="#ffffff" stroke="#53616b" stroke-width="2.5"/>
+<path d="M1000 1060 L1000 1080" fill="none" stroke="#53616b" stroke-width="3" stroke-linecap="round" />
+<circle cx="1000" cy="1080" r="5" fill="#53616b" stroke="#53616b" stroke-width="2"/>
+<text x="1033" y="1048" font-family="Segoe UI" font-size="22" font-weight="600" fill="#172c3b" text-anchor="start">1 kΩ</text>
+<path d="M1490 980 L1490 1001" fill="none" stroke="#53616b" stroke-width="3" stroke-linecap="round" />
+<path d="M1472 1001 L1508 1001" fill="none" stroke="#53616b" stroke-width="2" stroke-linecap="round" />
+<path d="M1478 1008 L1502 1008" fill="none" stroke="#53616b" stroke-width="2" stroke-linecap="round" />
+<path d="M1484 1015 L1496 1015" fill="none" stroke="#53616b" stroke-width="2" stroke-linecap="round" />
+<path d="M310 340 L740 340" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M310 340 L740 340" fill="none" stroke="#176db2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M120 340 L235 340" fill="none" stroke="#53616b" stroke-width="3" stroke-linecap="round" />
+<circle cx="120" cy="340" r="4" fill="#53616b" stroke="#53616b" stroke-width="2"/>
+<circle cx="235" cy="340" r="5" fill="#ffffff" stroke="#53616b" stroke-width="2"/>
+<circle cx="305" cy="340" r="5" fill="#ffffff" stroke="#176db2" stroke-width="2"/>
+<path d="M239 338 L295 316" fill="none" stroke="#53616b" stroke-width="3" stroke-linecap="round" />
+<text x="700" y="326" font-family="Consolas" font-size="18" font-weight="400" fill="#172c3b" text-anchor="end">GPIO1</text>
+<path d="M310 400 L740 400" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M310 400 L740 400" fill="none" stroke="#176db2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M120 400 L235 400" fill="none" stroke="#53616b" stroke-width="3" stroke-linecap="round" />
+<circle cx="120" cy="400" r="4" fill="#53616b" stroke="#53616b" stroke-width="2"/>
+<circle cx="235" cy="400" r="5" fill="#ffffff" stroke="#53616b" stroke-width="2"/>
+<circle cx="305" cy="400" r="5" fill="#ffffff" stroke="#176db2" stroke-width="2"/>
+<path d="M239 398 L295 376" fill="none" stroke="#53616b" stroke-width="3" stroke-linecap="round" />
+<text x="700" y="386" font-family="Consolas" font-size="18" font-weight="400" fill="#172c3b" text-anchor="end">GPIO0</text>
+<path d="M310 460 L740 460" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M310 460 L740 460" fill="none" stroke="#176db2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M120 460 L235 460" fill="none" stroke="#53616b" stroke-width="3" stroke-linecap="round" />
+<circle cx="120" cy="460" r="4" fill="#53616b" stroke="#53616b" stroke-width="2"/>
+<circle cx="235" cy="460" r="5" fill="#ffffff" stroke="#53616b" stroke-width="2"/>
+<circle cx="305" cy="460" r="5" fill="#ffffff" stroke="#176db2" stroke-width="2"/>
+<path d="M239 458 L295 436" fill="none" stroke="#53616b" stroke-width="3" stroke-linecap="round" />
+<text x="700" y="446" font-family="Consolas" font-size="18" font-weight="400" fill="#172c3b" text-anchor="end">GPIO25</text>
+<path d="M310 520 L740 520" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M310 520 L740 520" fill="none" stroke="#176db2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M120 520 L235 520" fill="none" stroke="#53616b" stroke-width="3" stroke-linecap="round" />
+<circle cx="120" cy="520" r="4" fill="#53616b" stroke="#53616b" stroke-width="2"/>
+<circle cx="235" cy="520" r="5" fill="#ffffff" stroke="#53616b" stroke-width="2"/>
+<circle cx="305" cy="520" r="5" fill="#ffffff" stroke="#176db2" stroke-width="2"/>
+<path d="M239 518 L295 496" fill="none" stroke="#53616b" stroke-width="3" stroke-linecap="round" />
+<text x="700" y="506" font-family="Consolas" font-size="18" font-weight="400" fill="#172c3b" text-anchor="end">GPIO7</text>
+<path d="M310 700 L740 700" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M310 700 L740 700" fill="none" stroke="#176db2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M120 700 L235 700" fill="none" stroke="#53616b" stroke-width="3" stroke-linecap="round" />
+<circle cx="120" cy="700" r="4" fill="#53616b" stroke="#53616b" stroke-width="2"/>
+<circle cx="235" cy="700" r="5" fill="#ffffff" stroke="#53616b" stroke-width="2"/>
+<circle cx="305" cy="700" r="5" fill="#ffffff" stroke="#176db2" stroke-width="2"/>
+<path d="M239 698 L295 676" fill="none" stroke="#53616b" stroke-width="3" stroke-linecap="round" />
+<text x="700" y="686" font-family="Consolas" font-size="18" font-weight="400" fill="#172c3b" text-anchor="end">GPIO11</text>
+<path d="M1140 520 L1260 520" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1140 520 L1260 520" fill="none" stroke="#176db2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1330 520 L1410 520" fill="none" stroke="#53616b" stroke-width="3" stroke-linecap="round" />
+<circle cx="1410" cy="520" r="4" fill="#53616b" stroke="#53616b" stroke-width="2"/>
+<circle cx="1260" cy="520" r="5" fill="#ffffff" stroke="#176db2" stroke-width="2"/>
+<circle cx="1330" cy="520" r="5" fill="#ffffff" stroke="#53616b" stroke-width="2"/>
+<path d="M1264 518 L1320 496" fill="none" stroke="#176db2" stroke-width="3" stroke-linecap="round" />
+<text x="1160" y="506" font-family="Consolas" font-size="18" font-weight="400" fill="#172c3b" text-anchor="start">GPIO10</text>
+<path d="M1140 580 L1260 580" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1140 580 L1260 580" fill="none" stroke="#176db2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1330 580 L1410 580" fill="none" stroke="#53616b" stroke-width="3" stroke-linecap="round" />
+<circle cx="1410" cy="580" r="4" fill="#53616b" stroke="#53616b" stroke-width="2"/>
+<circle cx="1260" cy="580" r="5" fill="#ffffff" stroke="#176db2" stroke-width="2"/>
+<circle cx="1330" cy="580" r="5" fill="#ffffff" stroke="#53616b" stroke-width="2"/>
+<path d="M1264 578 L1320 556" fill="none" stroke="#176db2" stroke-width="3" stroke-linecap="round" />
+<text x="1160" y="566" font-family="Consolas" font-size="18" font-weight="400" fill="#172c3b" text-anchor="start">GPIO9</text>
+<path d="M1140 640 L1260 640" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1140 640 L1260 640" fill="none" stroke="#176db2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1330 640 L1410 640" fill="none" stroke="#53616b" stroke-width="3" stroke-linecap="round" />
+<circle cx="1410" cy="640" r="4" fill="#53616b" stroke="#53616b" stroke-width="2"/>
+<circle cx="1260" cy="640" r="5" fill="#ffffff" stroke="#176db2" stroke-width="2"/>
+<circle cx="1330" cy="640" r="5" fill="#ffffff" stroke="#53616b" stroke-width="2"/>
+<path d="M1264 638 L1320 616" fill="none" stroke="#176db2" stroke-width="3" stroke-linecap="round" />
+<text x="1160" y="626" font-family="Consolas" font-size="18" font-weight="400" fill="#172c3b" text-anchor="start">GPIO8</text>
+<path d="M1140 340 L1490 340 L1490 790 L1570 790" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1140 340 L1490 340 L1490 790 L1570 790" fill="none" stroke="#c34737" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1140 460 L1510 460 L1510 260 L1570 260" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1140 460 L1510 460 L1510 260 L1570 260" fill="none" stroke="#b97512" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M740 580 L580 580 L580 880 L1540 880 L1540 320 L1570 320" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M740 580 L580 580 L580 880 L1540 880 L1540 320 L1570 320" fill="none" stroke="#176db2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M740 640 L550 640 L550 910 L1560 910 L1560 380 L1570 380" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M740 640 L550 640 L550 910 L1560 910 L1560 380 L1570 380" fill="none" stroke="#8357b4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1140 700 L1520 700 L1520 850 L1570 850" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1140 700 L1520 700 L1520 850 L1570 850" fill="none" stroke="#15816a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1230 700 L1170 700" fill="none" stroke="#15816a" stroke-width="3" stroke-linecap="round" marker-end="url(#rx-arrow)"/>
+<text x="700" y="566" font-family="Consolas" font-size="18" font-weight="400" fill="#172c3b" text-anchor="end">GPIO23</text>
+<text x="700" y="626" font-family="Consolas" font-size="18" font-weight="400" fill="#172c3b" text-anchor="end">GPIO24</text>
+<text x="1160" y="686" font-family="Consolas" font-size="18" font-weight="400" fill="#172c3b" text-anchor="start">GPIO12</text>
+<text x="1210" y="735" font-family="Segoe UI" font-size="17" font-weight="400" fill="#526675" text-anchor="start">RX</text>
+<text x="1130" y="867" font-family="Segoe UI" font-size="18" font-weight="600" fill="#176db2" text-anchor="middle">SDA</text>
+<text x="1130" y="936" font-family="Segoe UI" font-size="18" font-weight="600" fill="#8357b4" text-anchor="middle">SCL</text>
+<rect x="726" y="328" width="28" height="24" rx="5" fill="#d7b66d"/>
+<circle cx="740" cy="340" r="6" fill="#ffffff" stroke="#715c2b" stroke-width="2"/>
+<text x="767" y="347" font-family="Consolas" font-size="21" font-weight="400" fill="#ffffff" text-anchor="start">D0</text>
+<rect x="726" y="388" width="28" height="24" rx="5" fill="#d7b66d"/>
+<circle cx="740" cy="400" r="6" fill="#ffffff" stroke="#715c2b" stroke-width="2"/>
+<text x="767" y="407" font-family="Consolas" font-size="21" font-weight="400" fill="#ffffff" text-anchor="start">D1</text>
+<rect x="726" y="448" width="28" height="24" rx="5" fill="#d7b66d"/>
+<circle cx="740" cy="460" r="6" fill="#ffffff" stroke="#715c2b" stroke-width="2"/>
+<text x="767" y="467" font-family="Consolas" font-size="21" font-weight="400" fill="#ffffff" text-anchor="start">D2</text>
+<rect x="726" y="508" width="28" height="24" rx="5" fill="#d7b66d"/>
+<circle cx="740" cy="520" r="6" fill="#ffffff" stroke="#715c2b" stroke-width="2"/>
+<text x="767" y="527" font-family="Consolas" font-size="21" font-weight="400" fill="#ffffff" text-anchor="start">D3</text>
+<rect x="726" y="568" width="28" height="24" rx="5" fill="#d7b66d"/>
+<circle cx="740" cy="580" r="6" fill="#ffffff" stroke="#715c2b" stroke-width="2"/>
+<text x="767" y="587" font-family="Consolas" font-size="21" font-weight="400" fill="#ffffff" text-anchor="start">D4</text>
+<rect x="726" y="628" width="28" height="24" rx="5" fill="#d7b66d"/>
+<circle cx="740" cy="640" r="6" fill="#ffffff" stroke="#715c2b" stroke-width="2"/>
+<text x="767" y="647" font-family="Consolas" font-size="21" font-weight="400" fill="#ffffff" text-anchor="start">D5</text>
+<rect x="726" y="688" width="28" height="24" rx="5" fill="#d7b66d"/>
+<circle cx="740" cy="700" r="6" fill="#ffffff" stroke="#715c2b" stroke-width="2"/>
+<text x="767" y="707" font-family="Consolas" font-size="21" font-weight="400" fill="#ffffff" text-anchor="start">D6</text>
+<rect x="1126" y="328" width="28" height="24" rx="5" fill="#d7b66d"/>
+<circle cx="1140" cy="340" r="6" fill="#ffffff" stroke="#715c2b" stroke-width="2"/>
+<text x="1113" y="347" font-family="Consolas" font-size="21" font-weight="400" fill="#ffffff" text-anchor="end">5V</text>
+<rect x="1126" y="388" width="28" height="24" rx="5" fill="#d7b66d"/>
+<circle cx="1140" cy="400" r="6" fill="#ffffff" stroke="#715c2b" stroke-width="2"/>
+<text x="1113" y="407" font-family="Consolas" font-size="21" font-weight="400" fill="#ffffff" text-anchor="end">GND</text>
+<rect x="1126" y="448" width="28" height="24" rx="5" fill="#d7b66d"/>
+<circle cx="1140" cy="460" r="6" fill="#ffffff" stroke="#715c2b" stroke-width="2"/>
+<text x="1113" y="467" font-family="Consolas" font-size="21" font-weight="400" fill="#ffffff" text-anchor="end">3V3</text>
+<rect x="1126" y="508" width="28" height="24" rx="5" fill="#d7b66d"/>
+<circle cx="1140" cy="520" r="6" fill="#ffffff" stroke="#715c2b" stroke-width="2"/>
+<text x="1113" y="527" font-family="Consolas" font-size="21" font-weight="400" fill="#ffffff" text-anchor="end">D10</text>
+<rect x="1126" y="568" width="28" height="24" rx="5" fill="#d7b66d"/>
+<circle cx="1140" cy="580" r="6" fill="#ffffff" stroke="#715c2b" stroke-width="2"/>
+<text x="1113" y="587" font-family="Consolas" font-size="21" font-weight="400" fill="#ffffff" text-anchor="end">D9</text>
+<rect x="1126" y="628" width="28" height="24" rx="5" fill="#d7b66d"/>
+<circle cx="1140" cy="640" r="6" fill="#ffffff" stroke="#715c2b" stroke-width="2"/>
+<text x="1113" y="647" font-family="Consolas" font-size="21" font-weight="400" fill="#ffffff" text-anchor="end">D8</text>
+<rect x="1126" y="688" width="28" height="24" rx="5" fill="#d7b66d"/>
+<circle cx="1140" cy="700" r="6" fill="#ffffff" stroke="#715c2b" stroke-width="2"/>
+<text x="1113" y="707" font-family="Consolas" font-size="21" font-weight="400" fill="#ffffff" text-anchor="end">D7</text>
+<circle cx="1570" cy="260" r="5" fill="#ffffff" stroke="#b97512" stroke-width="2"/>
+<circle cx="1570" cy="320" r="5" fill="#ffffff" stroke="#176db2" stroke-width="2"/>
+<circle cx="1570" cy="380" r="5" fill="#ffffff" stroke="#8357b4" stroke-width="2"/>
+<circle cx="1910" cy="430" r="5" fill="#ffffff" stroke="#53616b" stroke-width="2"/>
+<circle cx="1570" cy="790" r="5" fill="#ffffff" stroke="#c34737" stroke-width="2"/>
+<circle cx="1570" cy="850" r="5" fill="#ffffff" stroke="#15816a" stroke-width="2"/>
+<circle cx="1910" cy="900" r="5" fill="#ffffff" stroke="#53616b" stroke-width="2"/>
+</svg>

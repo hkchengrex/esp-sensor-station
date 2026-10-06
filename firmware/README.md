@@ -1,5 +1,7 @@
 # Wiring and operation
 
+![Wiring diagram](../images/Wiring_Diagram.svg)
+
 | Connection | XIAO pad | GPIO |
 | --- | --- | ---: |
 | CO₂ SDA | D4 | 23 |
@@ -7,12 +9,14 @@
 | Radar TX → board RX | D7 | 12 |
 | Button signals | D0, D1, D2, D3, D6, D8, D9, D10 | 1, 0, 25, 7, 11, 8, 9, 10 |
 
-Power the SCD4x breakout from 3V3 and the LD2410C from 5V/VBUS. Connect all
-grounds. The I²C pull-ups must use 3.3 V. The radar uses UART1 at 256000 baud,
-8N1; its RX and OUT pins are unused. Each switch connects its signal to ground.
-Use a 1 kΩ series resistor on GPIO11 because ROM UART output can occur during
-reset. Application UART logging is disabled. Check breakout pin labels and fit
-before connecting power; sensor carriers match the supplied CAD envelopes.
+Power the SCD4x breakout from 3V3 and the LD2410C from 5V/VBUS. Connect both
+sensor grounds directly to XIAO GND. The I²C pull-ups must use 3.3 V. The radar
+uses UART1 at 256000 baud, 8N1; its RX and OUT pins are unused.
+
+Each switch connects its GPIO to a shared switch return. Connect that return
+to XIAO GND through one 1 kΩ resistor. Application UART logging is disabled.
+The diagram shows the XIAO's top-view pad layout; sensor blocks are schematic.
+Check the actual breakout pin labels before connecting power.
 
 Buttons use internal pull-ups, 10 ms polling and 30 ms debounce. The event topic
 reports both `press` and `release`; use `press` for immediate actions. Holding a

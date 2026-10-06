@@ -20,6 +20,10 @@ actions in your own automation system.
 | MX-compatible mechanical switches | 8 |
 | 3d printed parts | 1 set |
 
+## Wiring
+
+![Wiring diagram](images/Wiring_Diagram.svg)
+
 ## Firmware
 
 Use ESP-IDF **6.0.2**. Add your broker's public CA certificate as
