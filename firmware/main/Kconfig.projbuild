@@ -1,0 +1,35 @@
+menu "Sensor station"
+config STATION_PINS_VERIFIED
+    bool "Board wiring has been verified"
+    default n
+    help
+        Enable only after checking the exact board schematic and sensor breakout.
+config STATION_SDA
+    int "SCD4x SDA GPIO"
+    range -1 28
+    default -1
+config STATION_SCL
+    int "SCD4x SCL GPIO"
+    range -1 28
+    default -1
+config STATION_RADAR_RX
+    int "LD2410C TX to ESP RX GPIO"
+    range -1 28
+    default -1
+config STATION_LED
+    int "Optional indicator LED GPIO (-1 disables)"
+    range -1 28
+    default -1
+config STATION_LED_ACTIVE_LOW
+    bool "LED turns on at a low GPIO level"
+    default n
+config STATION_LED_MOTION
+    bool "Use LED for fresh movement instead of calibration"
+    default n
+    help
+        Stationary-only presence does not light the LED. The LED turns off
+        after two seconds without a valid radar report, regardless of networking.
+config STATION_WAKE_HOST
+    string "Optional UDP movement receiver IPv4 address (blank disables)"
+    default ""
+endmenu
