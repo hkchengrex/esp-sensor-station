@@ -5,7 +5,10 @@ and eight mechanical buttons. Firmware publishes MQTT telemetry and Home
 Assistant discovery over TLS. Button events contain GPIO identifiers; assign
 actions in your own automation system.
 
-![Station](images/Station_Assembly.png)
+![External](images/external.jpg)
+
+![Wiring](images/wiring.jpg)
+(forgive my poor soldering)
 
 ## Bill of materials
 
@@ -15,8 +18,7 @@ actions in your own automation system.
 | Sensirion SCD4x CO₂ sensor breakout, 3.3 V I²C | 1 |
 | Hi-Link LD2410C radar module | 1 |
 | MX-compatible mechanical switches | 8 |
-| USB-C cable, hookup wire and sensor connectors | 1 set |
-| Printed base, lid, switch plate, three electronics carriers and eight keycaps | 1 set |
+| 3d printed parts | 1 set |
 
 ## Firmware
 
